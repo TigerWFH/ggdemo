@@ -1,0 +1,25 @@
+{
+    "name": "monkey的小屋",
+    "description": "chrome extension demo!",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "./src/hello.html",
+        "default_icon": "./monkey.png",
+        "default_title": "monkey的小屋",
+        "css": ["./src/hello.css"]
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            },
+            "description": "Opens hello.html"
+        }
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ]
+}

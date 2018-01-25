@@ -6,8 +6,7 @@
     "browser_action": {
         "default_popup": "./src/hello.html",
         "default_icon": "./monkey.png",
-        "default_title": "monkey的小屋",
-        "css": ["./src/hello.css"]
+        "default_title": "monkey的小屋"
     },
     "commands": {
         "_execute_browser_action": {
@@ -19,7 +18,9 @@
         }
     },
     "permissions": [
+        "activeTab",
         "tabs",
+        "background",
         "storage"
     ]
 }
